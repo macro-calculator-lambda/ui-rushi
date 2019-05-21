@@ -1,12 +1,11 @@
 // jQuery(document).ready(function () {
-//     'use strict';
+//     "use strict";
 //     $('#slider-carousel').carouFredSel({
 //         responsive: true,
 //         width: '100%;',
 //         circular: true, 
 //         scroll: {
 //             items: 1, 
-//             easing: 'linear',
 //             duration: 500,
 //             pauseOnHover: true
 //         },
@@ -23,7 +22,7 @@
 //             pageAnchorbuilder: false 
 //         }
         
-//     })
+//     }); 
 
 
 
