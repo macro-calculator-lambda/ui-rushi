@@ -1,69 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  height: 3000px;
+}
+.secondary {
+  background-color: deepskyblue;
+  box-shadow: 0px 0px 10px 0px;
+  transition: all 0.5s ease-in;
+}
+hr {
+  height: 1px;
+  background-color: deepskyblue;
+  color: deepskyblue;
+  border: none;
+  margin-top: 30px;
 }
 header {
-  background-color: lightskyblue;
-  height: 100px;
-  line-height: 100px;
+  height: 130px;
+  line-height: 130px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
-header .logo {
-  font-size: 50px;
-  color: white;
+.logo {
+  padding-top: 5px;
+  padding-left: 30px;
+  height: 120px;
 }
-header nav {
+nav {
   float: right;
 }
-header nav ul {
+nav ul {
   list-style: none;
 }
-header nav ul li {
+nav ul li {
   display: inline-block;
 }
-header nav ul li a {
+nav ul li a {
   padding-right: 30px;
   font-weight: bold;
   color: white;
   transition: all 0.5s;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
   text-decoration: none;
   color: red;
 }
 .slider,
 .slider ul,
 .slider ul li {
-  height: 800px;
+  height: 900px;
   width: 100%;
   color: white;
   text-align: center;
   line-height: 50px;
 }
-.slider h2,
-.slider ul h2,
-.slider ul li h2 {
+.slider h2 {
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 3.3rem;
+  padding-top: 250px;
 }
-.slider p,
-.slider ul p,
-.slider ul li p {
-  font-size: 3rem;
+.slider p {
+  font-size: 2rem;
 }
-.slider .slider-carousel,
-.slider ul .slider-carousel,
-.slider ul li .slider-carousel {
+.slider .slider-carousel {
   list-style: none;
 }
 .slider a {
   padding: 10px 40px;
   background-color: white;
-  color: skyblue;
+  color: deepskyblue;
   font-weight: bold;
   border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+.slider a:hover {
+  background-color: deepskyblue;
+  color: white;
+  text-decoration: none;
 }
 .img1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/img1food.jpeg);
   background-size: 100% 100%;
+}
+.img2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/image2fitness.jpeg);
+  background-size: 100% 100%;
+}
+.img3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/img3yoga.jpeg);
+  background-size: 100% 100%;
+}
+.information {
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  padding: 100px 0px;
+}
+.information h3 {
+  font-size: 4rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 90%;
+  padding-left: 5%;
+}
+.information p {
+  font-size: 2rem;
+  max-width: 70%;
+  padding-left: 15%;
+}
+.information .two li {
+  font-size: 2rem;
+  max-width: 70%;
+  padding-left: 15%;
+}
+.information .two li span {
+  color: deepskyblue;
 }
