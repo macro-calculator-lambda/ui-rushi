@@ -34,3 +34,43 @@ width: 100%;
             }
         }
         }
+
+        label { 
+            font-size: 26px; 
+            line-height: 70px; 
+            display: none; 
+            float: right;
+            padding-right: 20px; 
+            padding-bottom: 50px;  
+        }
+        #toggle {
+            display: none; 
+        }
+
+        @media @mobile {
+            nav {
+                width: 100%; 
+                align-content: center; 
+                 
+            }
+            label {
+                display: block;
+                cursor: pointer; 
+            }
+            .menu {
+                 
+                width: 100%; 
+                display: none;
+                background-color: deepskyblue; 
+                text-align: center;
+                
+            }
+            .menu li {
+                display: block;  
+                margin: 0; 
+                text-align: center; 
+            }
+            #toggle:checked + .menu {
+                display: block;  
+            }
+        }
