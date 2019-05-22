@@ -16,7 +16,10 @@
         font-weight: bold; 
         font-size: 3.3rem;
         padding-top: 250px; 
-  
+        @media @tablet {
+            font-size: 2rem; 
+        }  
+
     }
     p {
         font-size: 2rem; 
@@ -47,20 +50,23 @@
 }
 
 
-.img1 {
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/img1food.jpeg); 
-    background-size: 100% 100%; 
+// .img1 {
+//     background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/img1food.jpeg); 
+//     background-size: 100% 100%; 
      
-}
+// }
 
 .img2 {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/image2fitness.jpeg); 
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
+    @media @tablet {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/greenjuicepic.jpeg);
+    } 
     
 }
 
-.img3 {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/img3yoga.jpeg); 
-    background-size: 100% 100%; 
+// .img3 {
+//     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/img3yoga.jpeg); 
+//     background-size: 100% 100%; 
     
-}
+// }

@@ -198,6 +198,11 @@ nav ul li a:hover {
   font-size: 3.3rem;
   padding-top: 250px;
 }
+@media (max-width: 800px) {
+  .slider h2 {
+    font-size: 2rem;
+  }
+}
 .slider p {
   font-size: 2rem;
 }
@@ -218,17 +223,14 @@ nav ul li a:hover {
   color: white;
   text-decoration: none;
 }
-.img1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/img1food.jpeg);
-  background-size: 100% 100%;
-}
 .img2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/image2fitness.jpeg);
   background-size: 100% 100%;
 }
-.img3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/img3yoga.jpeg);
-  background-size: 100% 100%;
+@media (max-width: 800px) {
+  .img2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/greenjuicepic.jpeg);
+  }
 }
 .information {
   line-height: 50px;
@@ -243,10 +245,22 @@ nav ul li a:hover {
   max-width: 90%;
   padding-left: 5%;
 }
+@media (max-width: 800px) {
+  .information h3 {
+    font-size: 3rem;
+  }
+}
 .information p {
   font-size: 2rem;
   max-width: 70%;
   padding-left: 15%;
+}
+@media (max-width: 800px) {
+  .information p {
+    max-width: 80%;
+    padding-left: 10%;
+    font-size: 1.5rem;
+  }
 }
 .information .two li {
   font-size: 2rem;
@@ -255,6 +269,13 @@ nav ul li a:hover {
 }
 .information .two li span {
   color: deepskyblue;
+}
+@media (max-width: 800px) {
+  .information .two li {
+    max-width: 80%;
+    padding-left: 10%;
+    font-size: 1.5rem;
+  }
 }
 .ourteamtitle {
   font-size: 3rem;
@@ -269,6 +290,11 @@ nav ul li a:hover {
   display: flex;
   flex-flow: row wrap;
 }
+@media (max-width: 800px) {
+  .ourteam {
+    padding-left: 10%;
+  }
+}
 .member {
   background-color: whitesmoke;
   border: 1px solid whitesmoke;
@@ -276,6 +302,11 @@ nav ul li a:hover {
   padding: 10px;
   width: 45%;
   transition: all 0.3s ease-in;
+}
+@media (max-width: 800px) {
+  .member {
+    width: 80%;
+  }
 }
 .member h5 {
   text-align: center;
@@ -304,4 +335,49 @@ nav ul li a:hover {
   background-image: url(..//Images/img3yoga.jpeg);
   background-position: center;
   background-attachment: fixed;
+}
+.contactus {
+  text-align: center;
+}
+.contactus form {
+  margin-top: 50px;
+}
+.contactus form input {
+  height: 45px;
+}
+.contactus form .submit {
+  background-color: deepskyblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.contact-title {
+  text-align: center;
+  padding-top: 20px;
+  color: deepskyblue;
+}
+.contact-title h1 {
+  font-size: 3rem;
+}
+.contact-title h2 {
+  color: black;
+  font-size: 1.5rem;
+}
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid deepskyblue;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+form .submit:hover {
+  background-color: white;
+  color: deepskyblue;
+  border-color: transparent;
+}
+footer p {
+  text-align: center;
+  padding: 30px 0px 10px 0px;
 }
