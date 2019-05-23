@@ -1,31 +1,46 @@
 
 
 .slider, .slider ul, .slider ul li {
-    height: 900px; 
+    height: 100vh; 
     width: 100%; 
     color: white; 
     text-align: center;
     line-height: 50px; 
+    object-fit: cover;
+    @media @tablet {
+        line-height: 40px; 
+    } 
     
 }; 
 
 .slider {
-     
+      object-fit: cover;
     h2 {
     
         font-weight: bold; 
         font-size: 3.3rem;
         padding-top: 250px; 
-  
+        @media @tablet {
+            font-size: 2rem; 
+            padding-top: 300px; 
+        }  
+        @media @mobile {
+            padding-top: 200px; 
+        }
+
     }
     p {
         font-size: 2rem; 
+        @media @tablet {
+            font-size: 1.5rem; 
+        }
     }
     
     .slider-carousel {
         list-style: none; 
     }
 }
+
 
 
 
@@ -49,17 +64,44 @@
 .img1 {
     background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/img1food.jpeg); 
     background-size: 100% 100%; 
+    @media @tablet {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/greenjuicepic.jpeg);
+    } 
+    @media @mobile {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/iphone\ background.jpg)
+    }
+      
      
 }
 
 .img2 {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/image2fitness.jpeg); 
-    background-size: 100% 100%; 
+    background-size: 100% 100%;  
+   
+    @media @tablet {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/greenjuicepic.jpeg);
+    } 
+    @media @mobile {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/iphone\ background.jpg)
+    }
     
 }
 
 .img3 {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/img3yoga.jpeg); 
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
+    @media @tablet {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/greenjuicepic.jpeg);
+    }    
+    @media @mobile {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Images/iphone\ background.jpg)
+    }
     
 }
+
+.slider-content {
+    display: none; 
+
+}
+
+

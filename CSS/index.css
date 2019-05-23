@@ -184,22 +184,95 @@ nav ul li a:hover {
   text-decoration: none;
   color: red;
 }
+label {
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+#toggle {
+  display: none;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    align-content: center;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    color: white;
+  }
+  .menu {
+    width: 100%;
+    display: none;
+    background-color: deepskyblue;
+    text-align: center;
+  }
+  .menu li {
+    display: block;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  #toggle:checked + .logo {
+    display: none;
+  }
+  #home {
+    border-top: 1px solid white;
+    padding-left: 43.352px;
+  }
+}
 .slider,
 .slider ul,
 .slider ul li {
-  height: 900px;
+  height: 100vh;
   width: 100%;
   color: white;
   text-align: center;
   line-height: 50px;
+  object-fit: cover;
+}
+@media (max-width: 800px) {
+  .slider,
+  .slider ul,
+  .slider ul li {
+    line-height: 40px;
+  }
+}
+.slider {
+  object-fit: cover;
 }
 .slider h2 {
   font-weight: bold;
   font-size: 3.3rem;
   padding-top: 250px;
 }
+@media (max-width: 800px) {
+  .slider h2 {
+    font-size: 2rem;
+    padding-top: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .slider h2 {
+    padding-top: 200px;
+  }
+}
 .slider p {
   font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .slider p {
+    font-size: 1.5rem;
+  }
 }
 .slider .slider-carousel {
   list-style: none;
@@ -222,19 +295,52 @@ nav ul li a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/img1food.jpeg);
   background-size: 100% 100%;
 }
+@media (max-width: 800px) {
+  .img1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/greenjuicepic.jpeg);
+  }
+}
+@media (max-width: 500px) {
+  .img1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/iphone\ background.jpg);
+  }
+}
 .img2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/image2fitness.jpeg);
   background-size: 100% 100%;
+}
+@media (max-width: 800px) {
+  .img2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/greenjuicepic.jpeg);
+  }
+}
+@media (max-width: 500px) {
+  .img2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/iphone\ background.jpg);
+  }
 }
 .img3 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/img3yoga.jpeg);
   background-size: 100% 100%;
 }
+@media (max-width: 800px) {
+  .img3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/greenjuicepic.jpeg);
+  }
+}
+@media (max-width: 500px) {
+  .img3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/iphone\ background.jpg);
+  }
+}
+.slider-content {
+  display: none;
+}
 .information {
   line-height: 50px;
   text-align: center;
   position: relative;
-  padding: 100px 0px;
+  padding: 100px 0px 0px 0px;
 }
 .information h3 {
   font-size: 4rem;
@@ -243,10 +349,25 @@ nav ul li a:hover {
   max-width: 90%;
   padding-left: 5%;
 }
+@media (max-width: 800px) {
+  .information h3 {
+    font-size: 3rem;
+  }
+}
 .information p {
   font-size: 2rem;
   max-width: 70%;
   padding-left: 15%;
+}
+@media (max-width: 800px) {
+  .information p {
+    max-width: 80%;
+    padding-left: 10%;
+    font-size: 1.5rem;
+  }
+}
+.information .three {
+  padding-bottom: 50px;
 }
 .information .two li {
   font-size: 2rem;
@@ -256,16 +377,30 @@ nav ul li a:hover {
 .information .two li span {
   color: deepskyblue;
 }
+@media (max-width: 800px) {
+  .information .two li {
+    max-width: 80%;
+    padding-left: 10%;
+    font-size: 1.5rem;
+  }
+}
 .ourteamtitle {
   font-size: 3rem;
   padding-bottom: 50px;
   text-align: center;
   max-width: 90%;
   padding-left: 5%;
+  color: white;
+  padding-top: 30px;
 }
 .ourteam {
   display: flex;
   flex-flow: row wrap;
+}
+@media (max-width: 800px) {
+  .ourteam {
+    padding-left: 10%;
+  }
 }
 .member {
   background-color: whitesmoke;
@@ -273,16 +408,95 @@ nav ul li a:hover {
   margin: 10px;
   padding: 10px;
   width: 45%;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 800px) {
+  .member {
+    width: 80%;
+  }
 }
 .member h5 {
   text-align: center;
   color: deepskyblue;
   font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 .member p {
   text-align: center;
 }
-.member img {
-  display: flex;
-  align-items: center;
+.profileimg {
+  width: 30%;
+  height: 300px;
+  padding-left: 35%;
+}
+@media (max-width: 800px) {
+  .profileimg {
+    width: 50%;
+    padding-left: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .profileimg {
+    width: 60%;
+    padding-left: 20%;
+  }
+}
+.member:hover {
+  background-color: deepskyblue;
+}
+.member:hover h5 {
+  color: white;
+}
+.member:hover p {
+  color: white;
+}
+.teampage {
+  background-image: url(..//Images/img3yoga.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+}
+.contactus {
+  text-align: center;
+}
+.contactus form {
+  margin-top: 50px;
+}
+.contactus form input {
+  height: 45px;
+}
+.contactus form .submit {
+  background-color: deepskyblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.contact-title {
+  text-align: center;
+  padding-top: 20px;
+  color: deepskyblue;
+}
+.contact-title h1 {
+  font-size: 3rem;
+}
+.contact-title h2 {
+  color: black;
+  font-size: 1.5rem;
+}
+.form-control {
+  width: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid deepskyblue;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+form .submit:hover {
+  background-color: white;
+  color: deepskyblue;
+  border-color: transparent;
+}
+footer p {
+  text-align: center;
+  padding: 30px 0px 10px 0px;
 }

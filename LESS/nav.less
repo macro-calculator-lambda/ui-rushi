@@ -34,3 +34,63 @@ width: 100%;
             }
         }
         }
+
+        label { 
+            font-size: 26px; 
+            line-height: 70px; 
+            display: none; 
+            float: right;
+            padding-right: 20px; 
+            padding-bottom: 50px;  
+        }
+        #toggle {
+            display: none; 
+        }
+
+        @media @mobile {
+            nav {
+                width: 100%; 
+                align-content: center; 
+                
+               
+                 
+            }
+            label {
+                display: block;
+                cursor: pointer;
+                position: relative; 
+                bottom: 100px; 
+                color: white;  
+            }
+            .menu {
+                 
+                width: 100%; 
+                display: none;
+                background-color: deepskyblue; 
+                text-align: center;
+                
+                
+            }
+            .menu li {
+                display: block;  
+                margin: 0; 
+                text-align: center;
+                border-bottom: 1px solid white; 
+                 
+                 
+
+            }
+            #toggle:checked + .menu {
+                display: block; 
+                 
+            }
+            #toggle:checked + .logo {
+                display: none; 
+            }
+            #home {
+                border-top: 1px solid white; 
+                padding-left: 43.352px; 
+            }
+
+            
+        }

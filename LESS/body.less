@@ -2,19 +2,32 @@
      line-height: 50px;
     text-align: center; 
     position: relative; 
-    padding: 100px 0px; 
+    padding: 100px 0px 0px 0px; 
     h3 {
         font-size: 4rem; 
         padding-top: 30px; 
         padding-bottom: 30px; 
         max-width: 90%; 
         padding-left: 5%; 
+        @media @tablet {
+            font-size: 3rem; 
+        }
     }
     p {
         font-size: 2rem; 
         max-width: 70%;
-        padding-left: 15%; 
+        padding-left: 15%;
+
+        @media @tablet {
+            max-width: 80%; 
+            padding-left: 10%; 
+            font-size: 1.5rem; 
+        }
         
+        
+    }
+    .three {
+        padding-bottom: 50px; 
     }
 
 }; 
@@ -26,5 +39,11 @@
         span {
             color: deepskyblue; 
         }
+        @media @tablet {
+            max-width: 80%;
+            padding-left: 10%;
+            font-size: 1.5rem;    
+             
+        } 
          
 }

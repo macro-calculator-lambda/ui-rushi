@@ -1,42 +1,41 @@
-// jQuery(document).ready(function () {
-//     'use strict';
-//     $('#slider-carousel').carouFredSel({
-//         responsive: true,
-//         width: '100%;',
-//         circular: true, 
-//         scroll: {
-//             items: 1, 
-//             easing: 'linear',
-//             duration: 500,
-//             pauseOnHover: true
-//         },
-//         auto: true,
-//         items: {
-//             visible: {
-//                 min: 1,
-//                 max: 1,
-//             },
-//             height: 'variable'
-//         },
-//         pagination: {
-//             container: '.sliderpager',
-//             pageAnchorbuilder: false 
-//         }
-        
-//     })
 
-
-
-$(window).scroll(function() { 
-    let top = $(window).scrollTop(); 
-    if(top >= 60) {
+$(window).scroll(function () {
+    let top = $(window).scrollTop();
+    if (top >= 60) {
         $('header').addClass('secondary');
     }
-    else if($('header').hasClass('secondary')){
+    else if ($('header').hasClass('secondary')) {
         ($('header').removeClass('secondary'))
-    } 
+    }
 
 })
 
- 
+
+//  carousel
+
+let carousel = document.querySelectorAll('.slider-carousel li');
+carousel = Array.from(carousel)
+console.log(carousel);
+
+function switchCarousel() {
+    // Hides all elements
+    carousel.forEach(function (element, index) {
+        element.classList.add('slider-content')
+    });
+
+    // Shows only 1
+    const randomElementIndex = Math.floor(Math.random() * carousel.length);
+    carousel[randomElementIndex].classList.remove('slider-content');
+}
+
+switchCarousel();
+// If you want to rotate on timer through background images
+
+// setInterval(function() {
+//     switchCarousel();
+// }, 1000 * 10);
+
+
+
+
 
