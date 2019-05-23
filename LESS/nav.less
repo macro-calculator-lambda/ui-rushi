@@ -51,11 +51,16 @@ width: 100%;
             nav {
                 width: 100%; 
                 align-content: center; 
+                
+               
                  
             }
             label {
                 display: block;
-                cursor: pointer; 
+                cursor: pointer;
+                position: relative; 
+                bottom: 100px; 
+                color: white;  
             }
             .menu {
                  
@@ -64,13 +69,28 @@ width: 100%;
                 background-color: deepskyblue; 
                 text-align: center;
                 
+                
             }
             .menu li {
                 display: block;  
                 margin: 0; 
-                text-align: center; 
+                text-align: center;
+                border-bottom: 1px solid white; 
+                 
+                 
+
             }
             #toggle:checked + .menu {
-                display: block;  
+                display: block; 
+                 
             }
+            #toggle:checked + .logo {
+                display: none; 
+            }
+            #home {
+                border-top: 1px solid white; 
+                padding-left: 43.352px; 
+            }
+
+            
         }

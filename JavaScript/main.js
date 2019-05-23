@@ -29,10 +29,11 @@ function switchCarousel() {
 }
 
 switchCarousel();
+// If you want to rotate on timer through background images
 
-setInterval(function() {
-    switchCarousel();
-}, 1000 * 5);
+// setInterval(function() {
+//     switchCarousel();
+// }, 1000 * 10);
 
 
 
